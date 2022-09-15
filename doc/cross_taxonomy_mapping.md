@@ -1,6 +1,7 @@
 
 
 **node_id** (compulsory):  Node identifier in source taxonomy.
+
 **cell_type_name** (compulsory): The primary name/symbol to be used for the cell type.
 
 **mapped_node_id** (compulsory): "The id of a node that this node maps to in a second taxonomy."
