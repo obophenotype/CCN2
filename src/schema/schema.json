@@ -10,7 +10,7 @@
         "provenance",
         "evidence_comment"
       ],
-      "additionalproperties": false,
+      "additionalProperties": false,
       "type": "object",
       "properties": {
         "node": {
@@ -48,11 +48,11 @@
     },
     "synonym": {
       "properties": {
-        "name": {
+        "synonym": {
           "type": "string",
           "description": "Another name for this cell type.  Do not use terms here that are much narrower or broader than the cell type being described.\n"
         },
-        "provenance": {
+        "synonym_provenance": {
           "type": "string",
           "description": "A DOI supporting the use of this synonym for this cell type, or failing that, an ORCID\n"
         }
@@ -92,27 +92,27 @@
     },
     "synonyms": {
       "type": "array",
-      "value": {
+      "items": {
         "$ref": "#definitions/synonym"
       }
     },
     "classification": {
       "description": "One or more cell ontology terms that classify the cell type defined by this node.\n",
       "type": "array",
-      "value": {
+      "items": {
         "$ref": "#definitions/ontology_term_annotation"
       }
     },
     "location": {
       "description": "A list of locations in which the cell type defined by this node is found, and (optionally), links to the evidence supporting this.\n",
       "type": "array",
-      "value": {
+      "items": {
         "$ref": "#definitions/ontology_term_annotation"
       }
     },
     "cross_taxonomy_mappings": {
       "type": "array",
-      "value": {
+      "items": {
         "$ref": "#definitions/cross_taxonomy_mapping"
       }
     }
