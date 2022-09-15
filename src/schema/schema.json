@@ -1,0 +1,120 @@
+{ "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CCN2",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "cross_taxonomy_mapping": {
+      "required": [
+        "mapped_node_id",
+        "mapped_node_name",
+        "provenance",
+        "evidence_comment"
+      ],
+      "additionalproperties": false,
+      "type": "object",
+      "properties": {
+        "node": {
+          "type": "object",
+          "properties": {
+            "mapped_node_id": {
+              "type": "string",
+              "description": "An taxonomy node ID."
+            },
+            "mapped_node_name": {
+              "description": "The name of the taxonomy node named in the node_id field\n",
+              "type": "string"
+            },
+            "provenance": {
+              "type": "array",
+              "value": "string",
+              "description": "A list in which each entry is either an ORCID or the DOI of a supporting publication.\"\n"
+            },
+            "evidence": {
+              "type": "object",
+              "properties": {
+                "evidence_comment": {
+                  "type": "string",
+                  "description": "A free text description of the evidence supporting this mapping. If a similarity_score is include, please also include details of how this was calculated.\n"
+                },
+                "similarity_score": {
+                  "type": "number",
+                  "description": "Some score recording the similarity between mapped nodes.\n"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "synonym": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Another name for this cell type.  Do not use terms here that are much narrower or broader than the cell type being described.\n"
+        },
+        "provenance": {
+          "type": "string",
+          "description": "A DOI supporting the use of this synonym for this cell type, or failing that, an ORCID\n"
+        }
+      }
+    },
+    "ontology_term_annotation": {
+      "properties": {
+        "id": {
+          "description": "An ontology term ID (following OBO curie style, e.g.: CL:0000100)\n"
+        },
+        "name": {
+          "description": "The label of the ontology term refered to by the id."
+        },
+        "evidence_comment": {
+          "description": "A free text comment describing the evidence supporting annotation of this node with this ontology term.\n"
+        },
+        "supporting_data": {
+          "description": "A URL linking to data supporting this annotation."
+        }
+      }
+    }
+  },
+  "required": ["node_id", "parent_node_id"],
+  "properties": {
+    "node_id": {
+      "type": "string",
+      "description": "Node identifier. This field should be programatically assigned, not edited.\n"
+    },
+    "cell_type_name": {
+      "type": "string",
+      "description": "The primary name/symbol to be used for the cell type.",
+      "ccn1_mapping": "primary_cell_type_alias"
+    },
+    "parent_node_id": {
+      "type": "string",
+      "description": "ID of parent node. This field should be programatically assigned, not edited.\n"
+    },
+    "synonyms": {
+      "type": "array",
+      "value": {
+        "$ref": "#definitions/synonym"
+      }
+    },
+    "classification": {
+      "description": "One or more cell ontology terms that classify the cell type defined by this node.\n",
+      "type": "array",
+      "value": {
+        "$ref": "#definitions/ontology_term_annotation"
+      }
+    },
+    "location": {
+      "description": "A list of locations in which the cell type defined by this node is found, and (optionally), links to the evidence supporting this.\n",
+      "type": "array",
+      "value": {
+        "$ref": "#definitions/ontology_term_annotation"
+      }
+    },
+    "cross_taxonomy_mappings": {
+      "type": "array",
+      "value": {
+        "$ref": "#definitions/cross_taxonomy_mapping"
+      }
+    }
+  }
+}
