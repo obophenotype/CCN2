@@ -14,6 +14,6 @@
 **similarity_score** (optional): Some score recording the similarity between mapped nodes.
 
 **provenance** (compulsory): ORCID of the person doing the mapping using the syntax ORCID:{orcid}.
-               Optionally include supporting publication using DOIs of the form.
+               Optionally include supporting publication using DOIs of the form doi:{doi}
                
                
