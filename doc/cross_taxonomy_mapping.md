@@ -7,12 +7,12 @@
    
 **mapped_node_name** (compulsory): "The name of the node in the mapped_node_id field."
 
-**evidence_comment** (compulsory, edited): A free text description of the evidence supporting this mapping. 
+**evidence_comment** (compulsory): A free text description of the evidence supporting this mapping. 
                       If a similarity_score is include, please also include details of how this was calculated.
                       
-**similarity_score** (optional, edited): Some score recording the similarity between mapped nodes.
+**similarity_score** (optional): Some score recording the similarity between mapped nodes.
 
-**provenance** (compulsory, edited): ORCID of the person doing the mapping using the syntax ORCID:{orcid}.
+**provenance** (compulsory): ORCID of the person doing the mapping using the syntax ORCID:{orcid}.
                Optionally include supporting publication using DOIs of the form.
                
                
