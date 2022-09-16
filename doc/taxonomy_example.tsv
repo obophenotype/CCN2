@@ -1,3 +1,3 @@
 node_id	cell_type_name	parent_node_id	synonyms	synonyms_provenance	classification_ontology_id	classification_ontology_name
-CS202002013_193	L5 ET MOp (Mouse)	CS202002013_179	Thick-tufted layer 5 pyramidal neurons MOp	PMID:26167146	CL:4023041	L5 extratelencephalic projecting glutamatergic cortical neuron
-CS202002013_5	Lamp5 Pdlim5_1 MOp (Mouse)	CS202002013_125			CL:4023011	lamp5 GABAergic cortical interneuron
+CS202002013_193	L5 ET	CS202002013_179	Thick-tufted layer 5 pyramidal neurons	PMID:26167146	CL:4023041	L5 extratelencephalic projecting glutamatergic cortical neuron
+CS202002013_5	Lamp5 Pdlim5_1	CS202002013_125			CL:4023011	lamp5 GABAergic cortical interneuron
