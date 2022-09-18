@@ -16,7 +16,7 @@
         "node": {
           "type": "object",
           "properties": {
-            "mapped_node_id": {
+            "mapped_cell_set_accession": {
               "type": "string",
               "description": "An taxonomy node ID."
             },
@@ -77,20 +77,20 @@
   },
   "required": ["node_id", "parent_node_id"],
   "properties": {
-    "node_id": {
+    "cell_set_accession": {
       "type": "string",
-      "description": "Node identifier. This field should be programatically assigned, not edited.\n"
+      "description": "Node identifier. This field should be programatically assigned, not edited."
     },
-    "cell_type_name": {
+    "cell_set_name": {
       "type": "string",
       "description": "The primary name/symbol to be used for the cell type.",
       "ccn1_mapping": "primary_cell_type_alias"
     },
-    "parent_node_id": {
+    "parent_cell_set_accession": {
       "type": "string",
-      "description": "ID of parent node. This field should be programatically assigned, not edited.\n"
+      "description": "ID of parent node. This field should be programatically assigned, not edited."
     },
-    "synonyms": {
+    "cell_set_synonyms": {
       "type": "array",
       "items": {
         "$ref": "#definitions/synonym"
