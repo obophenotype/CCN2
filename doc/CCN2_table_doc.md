@@ -24,6 +24,8 @@
 
 ## Taxonomy table
 
+### Columns:
+
 **cell_set_accession** (compulsory): Primary identifier of the cell set. This field should be programatically assigned, not edited.
 
 **cell_type_name** (compulsory): The primary name/symbol to be used for the (provisional) cell type defined by this cell set.
@@ -40,7 +42,9 @@
 
 **taxonomy level** (optional): One of: 'leaf_node', 'family', 'gross'.  Background: Algorithmically generated hierarchical taxonomies can be complex, with many nodes between root and leaf and branches of variable depth. To simplify this for display and discussion it can be useful to assign nodes to a 3 level hierarchy, with leaf nodes at the bottom.
 
-# cross taxonomy mapping table
+## Cross taxonomy mapping table
+
+### Columns:
 
 **cell_set_accession** (compulsory): Primary identifier of the cell set.
 
@@ -57,6 +61,8 @@
 **provenance** (compulsory): ORCID of the person doing the mapping using the syntax ORCID:0123-4567-890. Optionally include supporting publications using DOIs of the form doi:10.1126/journal.abj6641.
 
 ## location mapping table
+
+### Columns:
 
 **cell_set_accession** (compulsory): Primary identifier for cell set.
 
