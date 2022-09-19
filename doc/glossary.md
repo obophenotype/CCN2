@@ -1,6 +1,6 @@
 ## Glossary
 
-Adapted from {ref}
+Adapted from Glossary (Table 1) in  "Common cell type nomenclature for the mammalian brain." Miller et al., 2020 (doi:10.7554/eLife.59928)
 
 * **Cell taxonomy**: A Set of quantitatively derived clusters of data about single cells, defined by a specific computational algorithm on a specific dataset(s). Taxonomies are given a unique label and can be annotated with metadata about the taxonomy, including details of the algorithms and relevant cell and cell set IDs.  A taxonomy may be flat, or hierarchical. Hierarchical taxonomies are typically single inheritance (each cluster has only one parent). *E.g.* Any clustering result in a cell type classification manuscript
 
@@ -26,4 +26,4 @@ Examples: A cell type; a group of cell types; all cells from layer two in MTG; a
 
 * **Cell set accession ID**: A unique ID for a cell set. This is derived from the Taxonomy_id by the appending a '_' followed by an integer. e.g. CS201910120_1
 
-\* A note on the terms class, subclass, and type in CCN1:  CCN1 and least some of the literature using it, cell type is used to refer only to cells defined by leaf node cell sets. Class is used to refer to cell groupings defined by very general groupings of cell sets in a hierarchical clustering.  SubClass (in some papers 'family') is used to refer to cell groupings defined by mid-level clusters - with position in the hierarchy chosen somewhat flexibly. The use of these terms is potentially confusing given the regular use of class and subclass in discussion of classification, we therefore prefer the terms leaf node, family, and gross.
+\* A note on the terms class, subclass, and type in CCN1: In CCN1 and least some of the literature using it, cell type is used to refer only to cell groupings defined by leaf node cell sets. Class is used to refer to cell groupings defined by very general cell sets in a hierarchical clustering.  SubClass (in some papers 'family') is used to refer to cell groupings defined by mid-level clusters - with position in the hierarchy chosen somewhat flexibly. The use of these terms is potentially confusing given the regular use of class and subclass in discussion of classification, we therefore prefer the terms leaf node, family, and gross cell type.
