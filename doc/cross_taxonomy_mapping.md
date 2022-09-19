@@ -2,7 +2,7 @@
 
 **cell_set_accession** (compulsory):  The accession 
 
-**cell_set_name** (compulsory): The primary name/symbol to be used for the cell type defined by this cell set.
+**cell_type_name** (compulsory): The primary name/symbol to be used for the cell type defined by this cell set.
 
 **mapped_cell_set_accession** (compulsory): The accession (ID) of a cell set in a second taxonomy.
    
