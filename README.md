@@ -2,6 +2,7 @@
 Developing a successor to the CCN taxonomy system (link TBA)
 
 ### Aims: 
+ - Split nomenclature recommendations from schema.
  - Support existing use cases and workflows - particularly figure generation
  - Improve robustness by using node and ontology ids in cross-referencing, rather than names/aliases.
  - Encourage the use of ontology terms where possible.
