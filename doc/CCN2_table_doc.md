@@ -1,7 +1,6 @@
 ## Taxonomy metadata table
 
 ### Notes:
-* Metadata specified here can also be used in the cell set table for taxonomies combining data about cells from from multiple samples & techniques.
 * At least some of these fields could potentially be populated using metadata collected on samples and primary data.
 
 ### Columns:
@@ -37,9 +36,15 @@
 
 **synonym_provenance** (optional): Each entry in the synonyms field should have a corresponding entry here,  either the DOI of a supporting publication (in the form the form doi:10.1126/journal.abj6641) or the editor's ORCID (in the form: ORCID:01243-234-678).  Multiple entries should be separated by a '|'.
 
+**description (optional):** Optional free text description of the cluster.  This could be particularly useful for descrbing the properties of cells clustered from techniques that provide data on morphology, function and conectivity, e.g. patch-seq & epi-retro-seq.
+
 **classifying_ontology_term_id** (compulsory): The ID of an ontology term that classifies the cell type defined by this node.
 
 **classifying ontology term name** (compulsory): The name of the ontology term in the classification_id column.
+
+**classification_provenance** (compulsory): Either the DOI(s) of a supporting publication (in the form the form doi:10.1126/journal.abj6641) or the editor's ORCID (in the form: ORCID:01243-234-678).  Multiple entries should be separated by a '|'.
+
+**classification_comment**: A free text comment describing the evidence for this classification.
 
 **rank** (optional): One of: 'leaf_node', 'family', 'gross'.  Background: Algorithmically generated hierarchical taxonomies can be complex, with many nodes between root and leaf and branches of variable depth. To simplify this for display and discussion it can be useful to assign nodes to a 3 level hierarchy, with leaf nodes at the bottom.
 
@@ -83,9 +88,9 @@ We also anticipate that users may wish to populate the linking table programatic
 
 **cell_type_name** (compulsory): "The primary name/symbol to be used for the cell type defined by this cell set."
 
-**ontology_term_id** (compulsory): The ID of an ontology term that refers to a brain region that this cell type is located in. Ideally this should be the ID of a term defined as a region in a standard atlas."
+**location_ontology_term_id** (compulsory): The ID of an ontology term that refers to a brain region that this cell type is located in. Ideally this should be the ID of a term defined as a region in a standard atlas."
 
-**ontology_term_name** (compulsory): Name of the term whose ID is recorded in the ontology_term_id field.
+**location_ontology_term_name** (compulsory): Name of the term whose ID is recorded in the ontology_term_id field.
 
 **evidence_comment** (optional): A comment describing the evidence for this location mapping
 
@@ -95,4 +100,6 @@ We also anticipate that users may wish to populate the linking table programatic
 
 ### Notes on tooling:
 
-The NanoBot GUI curation tool will support Autocomplete on pairs of columns: cell_set_accession/cell_type name; ontology_term_id/ontology_term_name.
+The NanoBot GUI curation tool will support autocomplete on pairs of columns: cell_set_accession/cell_type name; ontology_term_id/ontology_term_name. The tool will be configurable to take the IDs and names of ontologies representing specific standard atlases.
+
+Multiple locations can be recorded as multiple rows with the same cell set accession.
