@@ -40,7 +40,11 @@
 
 **classifying ontology term name** (compulsory): The name of the ontology term in the classification_id column.
 
-**taxonomy level** (optional): One of: 'leaf_node', 'family', 'gross'.  Background: Algorithmically generated hierarchical taxonomies can be complex, with many nodes between root and leaf and branches of variable depth. To simplify this for display and discussion it can be useful to assign nodes to a 3 level hierarchy, with leaf nodes at the bottom.
+**classification_provenance** (compulsory): Either the DO(s) of a supporting publication (in the form the form doi:10.1126/journal.abj6641) or the editor's ORCID (in the form: ORCID:01243-234-678).  Multiple entries should be separated by a '|'.
+
+**classification_comment**: A free text comment describing the evidence for this classification.
+
+**rank** (optional): One of: 'leaf_node', 'family', 'gross'.  Background: Algorithmically generated hierarchical taxonomies can be complex, with many nodes between root and leaf and branches of variable depth. To simplify this for display and discussion it can be useful to assign nodes to a 3 level hierarchy, with leaf nodes at the bottom.
 
 ## Cross taxonomy mapping table
 
