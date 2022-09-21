@@ -8,7 +8,7 @@ The standard specifies a set of property key names applied to each cluster, incl
 
 A limited set of nomenclature recommendatations for cortical cell types was released with the initial schema.  
 
-Miller, J. A., Gouwens, N. W., Tasic, B., Collman, F., Van Velthoven, C. T. J., Bakken, T. E., Hawrylycz, M. J., Zeng, H., Lein, E. S., & Bernard, A. (2020). Common cell type nomenclature for the mammalian brain. ELife, 9, 1–23. https://doi.org/10.7554/eLife.59928
+* Miller, J. A., Gouwens, N. W., Tasic, B., Collman, F., Van Velthoven, C. T. J., Bakken, T. E., Hawrylycz, M. J., Zeng, H., Lein, E. S., & Bernard, A. (2020). Common cell type nomenclature for the mammalian brain. ELife, 9, 1–23. https://doi.org/10.7554/eLife.59928
 
 ### Basic workflow 
 
