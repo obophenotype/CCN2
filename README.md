@@ -18,8 +18,6 @@ An R dendrogram object and taxonomy metadata are used as input to the [CCN R lib
 
 The results can be saved as a standard JSON representation of an R dendrogram, or as a CSV.  The CSV may be further modified with additional manual annotation and the addition of cross-cutting classification nodes (breaking single inheritance). 
 
-TBA - schematic representation of workflow.
-
 R dendrograms are widely used for generating visualisations of taxonomies. The annotated versions resulting from the application of CCN are used for figure generation.
 
 
