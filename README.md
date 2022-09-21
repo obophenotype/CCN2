@@ -1,7 +1,29 @@
-## CCN2
-Developing a successor to the CCN taxonomy system (link TBA)
+# CCN2 - Developing a successor to the CCN taxonomy system
 
-### Aims: 
+## CCN1
+
+The Common Cell Type Nomenclature standard (Miller et al, 2020) is a standard for annotating, organising and linking cell type taxonomies built from clustering of single cell data based on some measure of similarity.  A taxonomy in this case may be a heirarchical or flat.  So far this has been applied to single cell transcriptomics, epigenomics, electophysiology data and morphlogy.  R dendrograms are the only supported heirarchical clustering input format.  These are single inheritance (each node/cluster has only one parent).  
+
+The standard specifies a set of property key names applied to each cluster, including one for unique identifiers (applied according to a standard schema), one for a primary name for a (provisional) cell type defined by the cluster and others designed to be used for mapping between taxonomies based on the use of shared names (aliases).
+
+A limited set of nomenclature recommendatations for cortical cell types was released with the initial schema.  
+
+Miller, J. A., Gouwens, N. W., Tasic, B., Collman, F., Van Velthoven, C. T. J., Bakken, T. E., Hawrylycz, M. J., Zeng, H., Lein, E. S., & Bernard, A. (2020). Common cell type nomenclature for the mammalian brain. ELife, 9, 1–23. https://doi.org/10.7554/eLife.59928
+
+### Basic workflow 
+
+(A much more detailed, practical workflow is described [here](http://htmlpreview.github.io/?https://github.com/AllenInstitute/nomenclature/blob/master/scripts/build_annotation_tables_SEAAD.nb.html).)
+
+An R dendrogram object and taxonomy metadata are used as input to the [CCN R library](https://github.com/AllenInstitute/CCN/). The library annotates all clusters with an ID, following a standard schema and can also be used to populate the standard set of properties defined by the schema.  IDs are also written back to files assigning individual cells to c
+
+The results can be saved as a standard JSON representation of an R dendrogram, or as a CSV.  The CSV may be further modified with additional manual annotation and the addition of cross-cutting classification nodes (breaking single inheritance). 
+
+TBA - schematic representation of workflow.
+
+R dendrograms are widely used for generating visualisations of taxonomies. The annotated versions resulting from the application of CCN are used for figure generation.
+
+
+### Aims for CCN2: 
  - Split nomenclature recommendations from schema.
  - Support existing use cases and workflows - particularly figure generation
  - Improve robustness by using node and ontology ids in cross-referencing, rather than names/aliases.
