@@ -86,9 +86,9 @@ We also anticipate that users may wish to populate the linking table programatic
 
 **cell_set_accession** (compulsory): Primary identifier for cell set.
 
-**cell_type_name** (compulsory): "The primary name/symbol to be used for the cell type defined by this cell set."
+**cell_type_name** (compulsory): The primary name/symbol to be used for the cell type defined by this cell set.
 
-**location_ontology_term_id** (compulsory): The ID of an ontology term that refers to a brain region that this cell type is located in. Ideally this should be the ID of a term defined as a region in a standard atlas."
+**location_ontology_term_id** (compulsory): The ID of an ontology term that refers to a brain region that this cell type is located in. Ideally this should be the ID of a term defined as a region in a standard atlas.
 
 **location_ontology_term_name** (compulsory): Name of the term whose ID is recorded in the ontology_term_id field.
 
