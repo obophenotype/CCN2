@@ -1,0 +1,4 @@
+node_id	cell_type_name	parent_node_id	synonyms	synonyms_provenance	classification_ontology_id	classification_ontology_name
+CS202005151_1	alpha7 cell		A7 cell	PMID:30413647	CL:4023010	alpha7 GABAergic cortical interneuron (Mmus)
+CS202005151_2	canopy cell				CL:4023022	canopy lamp5 GABAergic cortical interneuron (Mmus)
+CS202005151_3	neurogliaform cell		NGC	PMID:27477017	CL:4023024	neurogliaform lamp5 GABAergic cortical interneuron (Mmus)
