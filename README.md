@@ -34,5 +34,3 @@ R dendrograms are widely used for generating visualisations of taxonomies. The a
 A formal JSON schema can be found at [src/schema/schema.json](src/schema/schema.json).  However, we expect users to interact with this schema via flattened tables in an editor tool and available as reports.  Documentation, user guidance for those tables as well as examples can be found under [doc](doc).
 
 
-### Workflows (TBA):
-
