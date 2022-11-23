@@ -12,9 +12,12 @@ A limited set of nomenclature recommendatations for cortical cell types was rele
 
 ### Basic workflow 
 
-(A much more detailed, practical workflow is described [here](http://htmlpreview.github.io/?https://github.com/AllenInstitute/nomenclature/blob/master/scripts/build_annotation_tables_SEAAD.nb.html).)
+(A much more detailed, practical workflow for CCN1 is described [here](http://htmlpreview.github.io/?https://github.com/AllenInstitute/nomenclature/blob/master/scripts/build_annotation_tables_SEAAD.nb.html).)
 
-An R dendrogram object and taxonomy metadata are used as input to the [CCN R library](https://github.com/AllenInstitute/CCN/). The library annotates all clusters with an ID, following a standard schema and can also be used to populate the standard set of properties defined by the schema.  IDs are also written back to files assigning individual cells to c
+![image](https://user-images.githubusercontent.com/112839/203593004-2eb6d935-d092-4426-8a96-8a0acf970f00.png)
+
+
+An R dendrogram object and taxonomy metadata are used as input to the [CCN R library](https://github.com/AllenInstitute/CCN/). The library annotates all clusters with an ID, following a standard schema and can also be used to populate the standard set of properties defined by the schema.  IDs are also written back to files assigning individual cells to clusters ().  This file may also contain further cell type annotations/names.
 
 The results can be saved as a standard JSON representation of an R dendrogram, or as a CSV.  The CSV may be further modified with additional manual annotation and the addition of cross-cutting classification nodes (breaking single inheritance). 
 
@@ -32,5 +35,10 @@ R dendrograms are widely used for generating visualisations of taxonomies. The a
  
 ### Schema and Documentation:
 A formal JSON schema can be found at [src/schema/schema.json](src/schema/schema.json).  However, we expect users to interact with this schema via flattened tables in an editor tool and available as reports.  Documentation, user guidance for those tables as well as examples can be found under [doc](doc).
+
+Proposed CCN2 workflow
+
+![image](https://user-images.githubusercontent.com/112839/203592749-40ac9def-8b7b-476c-90ad-a7ba05144908.png)
+
 
 
